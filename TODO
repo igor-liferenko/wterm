@@ -1,4 +1,4 @@
-purge gtk3 from here based on github.com/igor-liferenko/kmscon
+purge gtk3 from here (i.e., remove gtk+-3.0 from Makefile) based on github.com/igor-liferenko/kmscon
 HINT: see next commit after cdd87983a0b8e026917b167a601d594ded29427d in github.com/dvdhrm/kmscon
 (rm -fr * and then do patch -p1 -R <that commit> - and then diff that directory with wlterm/
 And after you do it, remove libgtk-3-dev from preseed.cfg and see term/TODO
