@@ -1,7 +1,7 @@
 ./autogen.sh --enable-wlterm --disable-kmscon
 make
 
-for useful info see git log in github.com/dvdhrm/kmscon cdd87983a0b8e026917b167a601d594ded29427d..
+for useful info see git log cdd87983a0b8e026917b167a601d594ded29427d.. in kmscon/
 
 WARNING: do not do any changes to wlterm in this repo - first do TODO in wlterm repo and then start
 making changes in that repo instead
