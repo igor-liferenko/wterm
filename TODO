@@ -4,3 +4,7 @@ HINT: see next commit after cdd87983a0b8e026917b167a601d594ded29427d in kmscon/
 And after you do it, remove libgtk-3-dev from preseed.cfg and see term/TODO
 
 add --debug option like it is in wlterm in kmscon/ repo
+
+Reasons for replacing gnome-terminal:
+
+https://unix.stackexchange.com/questions/367994/how-to-make-c-generate-a-given-control-sequence
