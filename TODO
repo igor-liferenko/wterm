@@ -10,3 +10,5 @@ Reasons for replacing gnome-terminal:
 1. https://unix.stackexchange.com/questions/367994/how-to-make-c-generate-a-given-control-sequence (wlterm does it wrong by default, as gnome-terminal)
 2. KP_Enter in less search mode (/) gives ESCOM instead of doing the search (wlterm does it wrong by default, as gnome-terminal)
 3. pass F1-F12 keys to the application (wlterm does it right by default, unlike gnome-terminal)
+
+When you will finish wlterm, remove rebuilding libvte from vbox-stage
