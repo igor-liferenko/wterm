@@ -189,7 +189,7 @@ static int term_change_font(struct term *term)
 
 	old = term->face;
 	r = wlt_face_new(&term->face, term->font, "monospace",
-			 WLT_FACE_DONT_CARE, 0, 0);
+			 31, 0, 0);
 	if (r < 0)
 		return r;
 
