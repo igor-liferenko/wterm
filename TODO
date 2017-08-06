@@ -13,3 +13,5 @@ Reasons for replacing gnome-terminal:
 4. be able to adjust width of terminal to exactly 100 slots in fullscreen mode (customizing font size alone does not give exactly 100-slot width of window on some monitors); see -DNOTEBOOK for an example how I did it in "term" repo
 
 Note, that contrary to wlterm/, in kmscon/ repo its own libtsm is used, not the one from libtsm/ repo.
+
+After you do everything, remove term/ repo.
