@@ -11,7 +11,8 @@ Reasons for replacing gnome-terminal:
 2. KP_Enter in less search mode (/) gives ESCOM instead of doing the search (wlterm does it wrong by default, as gnome-terminal)
 3. pass F1-F12 keys to the application (wlterm does it right by default, unlike gnome-terminal)
 4. be able to adjust width of terminal to exactly 100 slots in fullscreen mode (customizing font size alone does not give exactly 100-slot width of window on some monitors); see -DNOTEBOOK for an example how I did it in "term" repo
+5. do wlterm without decorations, but full-screen width (HINT: use the same method as in way/ repo to implement full-screen)
 
 Note, that contrary to wlterm/, in kmscon/ repo its own libtsm is used, not the one from libtsm/ repo.
 
-After you do everything, remove term/ repo.
+After you do everything, remove term/ and kmscon/ repos.
