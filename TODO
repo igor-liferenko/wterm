@@ -1,9 +1,4 @@
-purge gtk3 from here (i.e., remove gtk+-3.0 from Makefile) based on kmscon/
-HINT: see next commit after cdd87983a0b8e026917b167a601d594ded29427d in kmscon/
-(rm -fr * and then do patch -p1 -R <that commit> - and then diff that directory with wlterm/
-And after you do it, remove libgtk-3-dev from preseed.cfg and see term/TODO
-
-add --debug option like it is in wlterm in kmscon/ repo
+see term/TODO
 
 Reasons for replacing gnome-terminal:
 
@@ -11,8 +6,7 @@ Reasons for replacing gnome-terminal:
 2. KP_Enter in less search mode (/) gives ESCOM instead of doing the search (wlterm does it wrong by default, as gnome-terminal)
 3. pass F1-F12 keys to the application (wlterm does it right by default, unlike gnome-terminal)
 4. be able to adjust width of terminal to exactly 100 slots in fullscreen mode (customizing font size alone does not give exactly 100-slot width of window on some monitors); see -DNOTEBOOK for an example how I did it in "term" repo
-5. do wlterm without decorations, but full-screen width (HINT: use the same method as in way/ repo to implement full-screen)
 
-Note, that contrary to wlterm/, in kmscon/ repo its own libtsm is used, not the one from libtsm/ repo.
+Purge code which does not concern full-screen mode (i.e., decorations, maximize stuff, etc)
 
-After you do everything, remove term/ and kmscon/ repos.
+After you do everything, remove term/, wterm/, libtsm/ and kmscon/ repos.
